@@ -31,6 +31,12 @@ img {
   height: auto;
 }
 
+.helt img,
+.service-kort img,
+.service-detalje img {
+  background: var(--farve-lys-blaa);
+}
+
 a {
   color: var(--farve-kontrast);
   text-decoration: none;
@@ -342,10 +348,17 @@ h3 {
   background: #ffffff;
   color: var(--farve-tekst);
   font: inherit;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
 }
 
 .formular-felt textarea {
   resize: vertical;
+}
+
+.formular-felt input:hover,
+.formular-felt select:hover,
+.formular-felt textarea:hover {
+  border-color: var(--farve-kontrast);
 }
 
 .site-fodnote {
