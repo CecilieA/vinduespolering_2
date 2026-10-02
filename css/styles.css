@@ -1,0 +1,415 @@
+:root {
+  --farve-baggrund: #ffffff;
+  --farve-lys: #f3f8fb;
+  --farve-lys-blaa: #e6f4fb;
+  --farve-tekst: #1d2b34;
+  --farve-muted: #5f7480;
+  --farve-kontrast: #1f5874;
+  --farve-kontrast-moerk: #173f55;
+  --farve-kant: #d7e5ec;
+  --skygge: 0 14px 35px rgba(24, 63, 85, 0.1);
+  --radius: 8px;
+  --afstand-side: 1.25rem;
+  --max-bredde: 1120px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--farve-baggrund);
+  color: var(--farve-tekst);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--farve-kontrast);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--farve-kontrast-moerk);
+  text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #81c7e8;
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem var(--afstand-side);
+  background: #ffffff;
+  border-bottom: 1px solid var(--farve-kant);
+}
+
+.site-logo {
+  color: var(--farve-kontrast-moerk);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.site-logo:hover {
+  text-decoration: none;
+}
+
+.main-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-navigation a {
+  display: inline-flex;
+  padding: 0.55rem 0.85rem;
+  border-radius: var(--radius);
+  color: var(--farve-tekst);
+  font-weight: 700;
+}
+
+.main-navigation a:hover,
+.main-navigation a.active {
+  background: var(--farve-lys-blaa);
+  color: var(--farve-kontrast-moerk);
+  text-decoration: none;
+}
+
+.helt {
+  display: grid;
+  gap: 2rem;
+  max-width: var(--max-bredde);
+  padding: 3rem var(--afstand-side);
+  margin: 0 auto;
+}
+
+.helt img {
+  border-radius: var(--radius);
+  box-shadow: var(--skygge);
+}
+
+.helt h1,
+.side-intro h1 {
+  margin-bottom: 1rem;
+  color: var(--farve-kontrast-moerk);
+  font-size: clamp(2rem, 8vw, 3.7rem);
+}
+
+.helt p,
+.side-intro p {
+  max-width: 650px;
+}
+
+.slogan {
+  color: var(--farve-kontrast);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.overlinje {
+  margin-bottom: 0.55rem;
+  color: var(--farve-kontrast);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.knap {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.8rem 1.1rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--farve-kontrast);
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.knap:hover {
+  background: var(--farve-kontrast-moerk);
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.sekundær-knap {
+  background: #ffffff;
+  color: var(--farve-kontrast);
+  border: 1px solid var(--farve-kant);
+}
+
+.sekundær-knap:hover {
+  background: var(--farve-lys-blaa);
+  color: var(--farve-kontrast-moerk);
+}
+
+.sektion,
+.side-intro,
+.cta-sektion {
+  max-width: var(--max-bredde);
+  padding: 3rem var(--afstand-side);
+  margin: 0 auto;
+}
+
+.lys-sektion {
+  max-width: none;
+  background: var(--farve-lys);
+}
+
+.lys-sektion > * {
+  max-width: var(--max-bredde);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tekstblok {
+  max-width: 760px;
+}
+
+.sektion-top {
+  max-width: 720px;
+  margin-bottom: 1.5rem;
+}
+
+.kort-grid,
+.service-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-kort,
+.service-kort,
+.kontaktoplysninger,
+.kontaktformular {
+  border: 1px solid var(--farve-kant);
+  border-radius: var(--radius);
+  background: #ffffff;
+  box-shadow: var(--skygge);
+}
+
+.info-kort {
+  padding: 1.25rem;
+}
+
+.service-kort {
+  overflow: hidden;
+}
+
+.service-kort div {
+  padding: 1.2rem;
+}
+
+.centreret-handling {
+  margin-top: 1.75rem;
+}
+
+.side-intro {
+  padding-bottom: 1rem;
+}
+
+.service-liste {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.service-detalje {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid var(--farve-kant);
+  border-radius: var(--radius);
+  background: #ffffff;
+  box-shadow: var(--skygge);
+}
+
+.service-detalje div {
+  padding: 1.25rem;
+}
+
+.fordele {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.fordele li + li {
+  margin-top: 0.45rem;
+}
+
+.cta-sektion {
+  margin-bottom: 3rem;
+  border-radius: var(--radius);
+  background: var(--farve-lys-blaa);
+  text-align: center;
+}
+
+.cta-sektion p {
+  max-width: 660px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.kontakt-layout {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.kontaktoplysninger,
+.kontaktformular {
+  padding: 1.25rem;
+}
+
+.kontaktoplysninger dl {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+}
+
+.kontaktoplysninger dt {
+  color: var(--farve-kontrast-moerk);
+  font-weight: 800;
+}
+
+.kontaktoplysninger dd {
+  margin: 0.2rem 0 0;
+}
+
+.tilbuds-hjaelp {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: var(--farve-lys);
+}
+
+.kontaktformular {
+  display: grid;
+  gap: 1rem;
+}
+
+.formular-felt {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.formular-felt label {
+  font-weight: 800;
+}
+
+.formular-felt input,
+.formular-felt select,
+.formular-felt textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #b9cbd4;
+  border-radius: var(--radius);
+  background: #ffffff;
+  color: var(--farve-tekst);
+  font: inherit;
+}
+
+.formular-felt textarea {
+  resize: vertical;
+}
+
+.site-fodnote {
+  display: grid;
+  gap: 0.75rem;
+  padding: 2rem var(--afstand-side);
+  background: #183f55;
+  color: #ffffff;
+  text-align: center;
+}
+
+.site-fodnote p {
+  margin: 0;
+}
+
+.site-fodnote a {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.site-fodnote nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --afstand-side: 2rem;
+  }
+
+  .site-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .kort-grid,
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-detalje {
+    grid-template-columns: minmax(260px, 0.9fr) 1.1fr;
+    align-items: center;
+  }
+
+  .service-detalje img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .kontakt-layout {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: start;
+  }
+}
+
+@media (min-width: 900px) {
+  .helt {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}

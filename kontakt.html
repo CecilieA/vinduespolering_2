@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt | KlarKant Vinduespolering</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="KlarKant Vinduespolering forside">
+      KlarKant Vinduespolering
+    </a>
+
+    <nav class="main-navigation" aria-label="Hovednavigation">
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="tjenester.html">Tjenester</a></li>
+        <li><a class="active" href="kontakt.html" aria-current="page">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sideintroduktion -->
+    <section class="side-intro">
+      <p class="overlinje">Kontakt</p>
+      <h1>Få et tilbud på vinduespudsning</h1>
+      <p>
+        Ring, skriv eller brug formularen. Vi svarer normalt samme hverdag og
+        hjælper gerne med at finde den rigtige løsning.
+      </p>
+    </section>
+
+    <!-- Kontaktindhold -->
+    <section class="sektion kontakt-layout">
+      <div class="kontaktoplysninger">
+        <h2>Kontaktoplysninger</h2>
+        <dl>
+          <div>
+            <dt>Adresse</dt>
+            <dd>KlarKant Vinduespolering<br>Rosenhøj Allé 18<br>8260 Viby J</dd>
+          </div>
+          <div>
+            <dt>Telefon</dt>
+            <dd><a href="tel:+4528146620">28 14 66 20</a></dd>
+          </div>
+          <div>
+            <dt>E-mail</dt>
+            <dd><a href="mailto:kontakt@klarkant.dk">kontakt@klarkant.dk</a></dd>
+          </div>
+          <div>
+            <dt>Åbningstider</dt>
+            <dd>Mandag til fredag: 08.00-17.00<br>Lørdag: 09.00-13.00</dd>
+          </div>
+          <div>
+            <dt>Område</dt>
+            <dd>Aarhus, Viby, Højbjerg, Risskov, Brabrand, Tranbjerg og omegn.</dd>
+          </div>
+        </dl>
+
+        <div class="tilbuds-hjaelp">
+          <h3>Gode oplysninger til et tilbud</h3>
+          <p>
+            Skriv gerne antal vinduer, boligtype, postnummer og om du ønsker
+            indvendig, udvendig eller fuld vinduespudsning.
+          </p>
+        </div>
+      </div>
+
+      <!-- Kontaktformular -->
+      <form class="kontaktformular" action="#" method="post">
+        <h2>Send en besked</h2>
+
+        <div class="formular-felt">
+          <label for="navn">Navn</label>
+          <input type="text" id="navn" name="navn" autocomplete="name" required>
+        </div>
+
+        <div class="formular-felt">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="formular-felt">
+          <label for="telefon">Telefonnummer</label>
+          <input type="tel" id="telefon" name="telefon" autocomplete="tel">
+        </div>
+
+        <div class="formular-felt">
+          <label for="service">Valg af service</label>
+          <select id="service" name="service" required>
+            <option value="">Vælg en service</option>
+            <option value="privat">Privat vinduespudsning</option>
+            <option value="erhverv">Erhvervsvinduespudsning</option>
+            <option value="abonnement">Abonnementsordning</option>
+            <option value="andet">Andet</option>
+          </select>
+        </div>
+
+        <div class="formular-felt">
+          <label for="besked">Besked</label>
+          <textarea id="besked" name="besked" rows="6" required></textarea>
+        </div>
+
+        <button class="knap" type="submit">Send besked</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-fodnote">
+    <p>&copy; 2026 KlarKant Vinduespolering</p>
+    <p><a href="tel:+4528146620">28 14 66 20</a> · <a href="mailto:kontakt@klarkant.dk">kontakt@klarkant.dk</a></p>
+    <nav aria-label="Sidefod navigation">
+      <a href="index.html">Forside</a>
+      <a href="tjenester.html">Tjenester</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </footer>
+</body>
+</html>
